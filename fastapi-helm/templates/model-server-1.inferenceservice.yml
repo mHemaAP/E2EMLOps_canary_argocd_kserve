@@ -20,7 +20,7 @@ spec:
     serviceAccountName: s3-read-only
     pytorch:
       protocolVersion: v1
-      storageUri: s3://emlo-project/kserve-ig/vegfruits-classifier-stage/
+      storageUri: s3://emlo-project/kserve-ig/vegfruits-classifier-prod/
       # storageUri: s3://tsai-emlo/kserve-ig/fakeimagenet-vit/
       # image: pytorch/torchserve-kfs:0.12.0
       image: 567720730948.dkr.ecr.ap-south-1.amazonaws.com/model-onnx-server:latest
