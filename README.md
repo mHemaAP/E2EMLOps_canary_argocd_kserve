@@ -1,0 +1,1 @@
+# E2EMLOps_canary_argocd_kserve
