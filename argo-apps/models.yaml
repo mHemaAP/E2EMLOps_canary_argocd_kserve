@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/ajithvcoder/emlo4-session-18-ajithvcoder-canary-argocd-kserve.git
+    repoURL: https://github.com/mHemaAP/E2EMLOps_canary_argocd_kserve.git
     targetRevision: HEAD
     path: fastapi-helm
   destination:
