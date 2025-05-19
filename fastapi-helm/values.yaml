@@ -14,7 +14,7 @@ configVersions:
 # UI Server Next JS
 modelServer:
   image:
-    repository: 306093656765.dkr.ecr.ap-south-1.amazonaws.com/a18/model-server
+    repository: 567720730948.dkr.ecr.ap-south-1.amazonaws.com/a18/model-server
     tag: latest
   resources:
       limits:
@@ -24,13 +24,13 @@ modelServer:
 # UI Server Next JS
 uiServer:
   image:
-    repository: 306093656765.dkr.ecr.ap-south-1.amazonaws.com/a18/ui-server
+    repository: 567720730948.dkr.ecr.ap-south-1.amazonaws.com/a18/ui-server
     tag: latest
 
 # Web Server
 webServer:
   image:
-    repository: 306093656765.dkr.ecr.ap-south-1.amazonaws.com/a18/web-server
+    repository: 567720730948.dkr.ecr.ap-south-1.amazonaws.com/a18/web-server
     tag: latest
     
 

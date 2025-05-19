@@ -20,10 +20,10 @@ spec:
     serviceAccountName: s3-read-only
     pytorch:
       protocolVersion: v1
-      storageUri: s3://mybucket-emlo-mumbai/kserve-ig/sports-classifier-stage/
+      storageUri: s3://emlo-project/kserve-ig/sports-classifier-stage/
       # storageUri: s3://tsai-emlo/kserve-ig/fakeimagenet-vit/
       # image: pytorch/torchserve-kfs:0.12.0
-      image: 306093656765.dkr.ecr.ap-south-1.amazonaws.com/model-onnx-server:latest
+      image: 567720730948.dkr.ecr.ap-south-1.amazonaws.com/model-onnx-server:latest
       # imagePullPolicy: Always
       resources:
         requests:
@@ -46,7 +46,7 @@ spec:
     #     image: "{{ .Values.modelServer.image.repository }}:{{ .Values.modelServer.image.tag }}"
     #     imagePullPolicy: Always
     #     protocolVersion: v1
-    #     storageUri: "s3://mybucket-emlo-mumbai/sd_small/"
+    #     storageUri: "s3://emlo-project/sd_small/"
     #     resources:
     #       limits:
     #         cpu: "8"
@@ -59,7 +59,7 @@ spec:
     #                 key: model_name
     # custom:
     #   protocolVersion: v1
-    #   storageUri: "s3://mybucket-emlo-mumbai/sd_small/"
+    #   storageUri: "s3://emlo-project/sd_small/"
     #   image: "{{ .Values.modelServer.image.repository }}:{{ .Values.modelServer.image.tag }}"
     #   imagePullPolicy: IfNotPresent
     #   resources:
