@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: fastapi-helm
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/ajithvcoder/emlo4-session-18-ajithvcoder-canary-argocd-kserve.git
+    targetRevision: HEAD
+    path: fastapi-helm
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: default
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true

@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+    name: timm-model-2-config-{{ .Values.configVersions.modelServer }}
+    namespace: {{ .Values.namespace }}
+    labels:
+        app.kubernetes.io/name: timm-model-2
+        app.kubernetes.io/version: {{ .Values.configVersions.modelServer }}
+        app.kubernetes.io/part-of: fastapi-app
+data:
+    model_server_url_1: http://a3e904dfcff234724af6c06ddbc1b7ce-960882756.ap-south-1.elb.amazonaws.com/v1/models/vegfruits-classifier:predict
+    model_server_url_2: http://a3e904dfcff234724af6c06ddbc1b7ce-960882756.ap-south-1.elb.amazonaws.com/v1/models/sports-classifier:predict
+    # model_server_url: "http://k8s-istioing-istioing-4e9c229939-a3c496216e5fe472.elb.ap-south-1.amazonaws.com"
+    # model_server_url: "http://k8s-istioing-istioing-494293efcc-3fbae2cd5f4bd01d.elb.ap-south-1.amazonaws.com/v1/models/sd_small:predict"
+    model_name: {{ .Values.modelName }}
