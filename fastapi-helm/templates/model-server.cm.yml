@@ -8,8 +8,8 @@ metadata:
         app.kubernetes.io/version: {{ .Values.configVersions.modelServer }}
         app.kubernetes.io/part-of: fastapi-app
 data:
-    model_server_url_1: http://a934d363777194d54a30a1d1f6e6994d-1741472779.ap-south-1.elb.amazonaws.com/v1/models/vegfruits-classifier:predict
-    model_server_url_2: http://a934d363777194d54a30a1d1f6e6994d-1741472779.ap-south-1.elb.amazonaws.com/v1/models/sports-classifier:predict
+    model_server_url_1: http://a50cf4ae446c94fddad2c2568c506dfc-150109954.ap-south-1.elb.amazonaws.com/v1/models/vegfruits-classifier:predict
+    model_server_url_2: http://a50cf4ae446c94fddad2c2568c506dfc-150109954.ap-south-1.elb.amazonaws.com/v1/models/sports-classifier:predict
     # model_server_url: "http://k8s-istioing-istioing-4e9c229939-a3c496216e5fe472.elb.ap-south-1.amazonaws.com"
     # model_server_url: "http://k8s-istioing-istioing-494293efcc-3fbae2cd5f4bd01d.elb.ap-south-1.amazonaws.com/v1/models/sd_small:predict"
     model_name: {{ .Values.modelName }}
